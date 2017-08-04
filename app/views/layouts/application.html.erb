@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>QrpSpecialty</title>
+    <meta charset="utf-8">
+    <title>Quick RX Specialty</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+    <%= favicon_link_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'jquery-3.2.1.min.js' %>
+    <%= stylesheet_link_tag    'font-awesome.css', media: 'all' %>
+    <%= stylesheet_link_tag    'bootstrap.min.css', media: 'all' %>
+    <%= stylesheet_link_tag    'quickrx.css', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'bootstrap.min.js' %>
   </head>
 
   <body>

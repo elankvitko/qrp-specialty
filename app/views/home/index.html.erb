@@ -1,0 +1,238 @@
+<%= render "layouts/mini_nav" %>
+
+<%= render "layouts/nav" %>
+
+<div class="header">
+    <div class="container-fluid banner-header" id="banner">
+        <div class="row">
+            <div class="col-md-12">
+                <%= image_tag "q.png", class: "top_Q", alt: "QuickRX Symbol" %>
+                <div class="col-md-offset-3 col-sm-offset-3 heading_block">
+                    <h1>SPEND TIME WITH YOUR LOVED ONES</h1>
+                    <h1>INSTEAD OF RUNNING AFTER PRESCRIPTIONS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid small-gaps" id="icon-banner">
+        <div class="row text-center benefits">
+            <h1>OUR BENEFITS</h1>
+            <div class="col-md-offset-2 col-sm-3 col-xs-6 col-md-2 text-center">
+                <a href="" class="icon-link">
+                    <div class="custom-icons first-child">
+                        <%= image_tag "/images/specialty_icon.png", class: "icon first-icon", alt: "Specialty" %>
+                    </div>
+                    <h2>SPECIALTIES</h2>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6 text-center">
+                <a href="" class="icon-link">
+                    <div class="custom-icons">
+                        <%= image_tag "/images/priorA_icon.png", class: "icon", alt: "Prior Authorization" %>
+                    </div>
+                    <h2>PRIOR AUTHORIZATION</h2>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6 text-center">
+                <a href="" class="icon-link">
+                    <div class="custom-icons">
+                        <%= image_tag "/images/finance_icon.png", class: "icon", alt: "Finance" %>
+                    </div>
+                    <h2>FINANCIAL ASSISTANCE</h2>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6 text-center">
+                <a href="" class="icon-link">
+                    <div class="custom-icons">
+                        <%= image_tag "/images/edu_icon.png", class: "icon", alt: "Education" %>
+                    </div>
+                    <h2>EDUCATION</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-6 col-md-8">
+                <%= image_tag "about.png", width: "100%", alt: "About QuickRX" %>
+            </div>
+            <div class="col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-1 about_text small-gaps col-xs-10 col-md-4">
+                <h1 class="about_h1">ABOUT US</h1>
+                <p>
+                    QuickRX is New York City’s most trusted pharmacy. QuickRX is full of friendly, multilingual staff members who greet you with
+                    a smile and treat you like family. We are open 7 days a week!</p>
+                <p class="pdt-10"><b>At QuickRX:</b></p>
+                <p>Most insurance accepted</p>
+                <p>Competitive Pricing</p>
+                <p>Free pickup or local delivery</p>
+                <p>Free consultations with pharmacists both by phone and in-person</p>
+                <p>Medical Supplies</p>
+                <p>At QuickRX our mission is to improve the health and wellness of our communities. Our ability to communicate
+                    with patients about their compliance is unmatched. Our personalized Rx Reports allow us monitor patient
+                    upkeep of their medications in a unique and highly effective manner. Our staff training and self-auditing
+                    procedures are thorough and unrivaled by our competitors.</p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid" id="services">
+        <div class="row">
+            <div class="col-md-offset-0 col-lg-offset-2 col-sm-offset-1 col-xs-offset-1 services_text small-gaps col-xs-10 col-md-4">
+                <h1 class="pdt-10">SERVICES</h1>
+                <p>The pharmacy industry is continuously evolving, but at QuickRX we have made it our mission to be ahead
+                    of the curve, constantly developing and providing high-quality formulations and extraordinary customer
+                    service to both patients and healthcare practitioners.<br/> We do more than simply fill your prescriptions;
+                    we offer a wide variety of concentrated care, treatments and medications to help you manage your
+                    condition. We offer specialty medications to help treat chronic, rare and/or complex conditions.</p>
+                <p>QuickRX pharmacies go above and beyond to convenience, professionalism and pharmaceutical resources to
+                    give you the best individualized personal care possible. You can be sure that your information and
+                    privacy is fully respected at all times.</p>
+                <p> We take your time seriously, which is why we do everything we can to make your pharmacy experience convenient.
+                    We help to remind you of refill dates to make sure you stay in line with your treatment plans, as
+                    well as organize your medications for you so that they are ready at the same time.</p>
+                <p> Have questions about your insurance or benefits? Need help finding financial assistance? We can help!
+                    We will work with you and your insurance to help answer any questions you may have.</p>
+                <p class="pdt-20"><b>We also offer...</b></p>
+                <p>Fast, free same day delivery</p>
+                <p>Lowest possible prices</p>
+                <p>Patient adherence programs</p>
+                <p>Hypertension testing</p>
+
+                </p>
+            </div>
+            <div class="ol-xs-12 col-md-8 col-lg-6">
+                <%= image_tag "services.png", width: "100%", alt: "Services of QuickRX" %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid " id="contact">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div id="map"></div>
+                <div id="map_overlay">
+                </div>
+            </div>
+            <div class="col-md-6 small-gaps" id="form-box">
+                <h1 class="contact_h1 pdt-5">CONTACT US</h1>
+
+                <div class="col-md-6">
+                    <p class="form_subhead">For more information please fill out your details and we will contact you shortly</p>
+                    <form id="contact_form">
+                        <div class="form-group">
+                            <label for="firstname" class="sr-only">First Name</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="surname" class="sr-only">First Name</label>
+                            <input type="text" class="form-control" id="surname" placeholder="Surname">
+                        </div>
+                        <div class="form-group">
+                            <label for="addresss" class="sr-only">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="sr-only">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <label for="state" class="sr-only">State</label>
+                            <input type="text" class="form-control" id="state" placeholder="State">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode" class="sr-only">Zip Code</label>
+                            <input type="text" class="form-control" id="zipcode" placeholder="Zip COde">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="sr-only">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-text" class="form-control" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">SEND</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="address_heading">QuickRX Headquater</h5>
+                    <p>90 Broad street, Suite 402</p>
+                    <p>New York, NY 10004</p>
+                    <p>Telephone: 212-249-8202</p>
+                    <p>Email: support@qrpgroup.com</p>
+                    <div class="col-md-12 form-social">
+                        <a href="#" class="social-icon-inverse"><i class="fa fa-twitter "></i></a>
+                        <a href="#" class="social-icon-inverse"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-icon-inverse"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#" class="social-icon-inverse"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="social-icon-inverse"><i class="fa fa-google-plus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= render "layouts/partner_logos" %>
+
+<%= render "layouts/footer" %>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3_Wn8zF-3nDgK2ntMPp40GKrqia1Azw&callback=initMap">
+</script>
+
+<script>
+	function initMap() {
+		var e = { lat: 40.8453968, lng: -73.84465449999999 },
+				i = new google.maps.Map(document.getElementById("map"),
+				{ zoom: 15, center: e, scrollwheel: false }),
+				n = '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><p>QuickRX Specialty Pharmacy</p></div></div>',
+				o = new google.maps.InfoWindow({ content: n }),
+				t = new google.maps.Marker({ position: e,
+																		 map: i,
+																		 title: "1642 Eastchester Rd., Bronx, NY 10461" });
+																		 t.addListener("click", function () { o.open(i, t) })
+	}
+
+	$('#map_overlay').click(function(event){
+		event.preventDefault();
+		$('#map').trigger(event);
+	});
+</script>
+
+<script type="text/javascript">
+	$(function() {
+		$(".custom-icons")
+			.mouseover(function() {
+				var changeThis = $(this).children()[ 0 ]
+				var nameWithoutPng = $(changeThis).attr( "src" ).split( "/" )[ 2 ]
+				var name = nameWithoutPng.split( ".png" )[ 0 ];
+				var src = "/images/" + name + "-red.png"
+		 		$(changeThis).attr("src", src);
+			})
+
+			.mouseout(function() {
+				var changeThis = $(this).children()[ 0 ]
+				var nameWithoutPng = $(changeThis).attr( "src" ).split( "/" )[ 2 ]
+				var name = nameWithoutPng.split( "-red.png" )[ 0 ];
+				var src = "/images/" + name + ".png"
+		 		$(changeThis).attr("src", src);
+			});
+	});
+</script>

@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root :to => 'home#index'
+
+  get '/our-specialties', to: 'specialties#index', as: "specialties"
+  get '/services', to: 'services#index', as: "services"
+  get '/contact-us', to: 'contact#index', as: "contact"
 end

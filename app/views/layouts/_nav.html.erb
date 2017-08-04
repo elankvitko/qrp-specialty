@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+            <div class="navbar-brand">
+                <%= link_to root_path do %>
+                  <%= image_tag "logo_color.png", alt: "QuickRX", class: "logo_img" %>
+                <% end %>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="my-navbar-collapse">
+            <ul id="nav" class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">HOME</a></li>
+
+                <li class="dropdown">
+                    <%= link_to "OUR SPECIALTIES", specialties_path, class: "dropdown-toggle", data: { toggle: 'dropdown' } %>
+                    <ul class="dropdown-menu multi-column columns-2">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">ADDICTION MANAGEMENT</a></li>
+                                    <li><a href="#">DERMATOLOGY</a></li>
+                                    <li><a href="#">CARDIOVASCULAR DISEASE</a></li>
+                                    <li><a href="#">FERTILITY</a></li>
+                                    <li><a href="#">ONCOLOGY</a></li>
+                                    <li><a href="#">HAPETITIS</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">ADDICTION MANAGEMENT</a></li>
+                                    <li><a href="#">DERMATOLOGY</a></li>
+                                    <li><a href="#">CARDIOVASCULAR DISEASE</a></li>
+                                    <li><a href="#">FERTILITY</a></li>
+                                    <li><a href="#">ONCOLOGY</a></li>
+                                    <li><a href="#">HAPETITIS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <%= link_to "SERVICES", services_path, class: "dropdown-toggle", data: { toggle: "dropdown" } %>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">EDUCATION</a></li>
+                        <li><a href="#">FINANCIAL ASSISTANCE</a></li>
+                        <li><a href="#">LIMITED DISTRIBUTION MEDICATIONS</a></li>
+                        <li><a href="#">PORTAL TECHNOLOGY</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                        <li><a href="#">QUALITY ASSURANCE</a></li>
+                    </ul>
+                </li>
+
+                <li><%= link_to "CONTACT US", contact_path %></li>
+            </ul>
+        </div>
+    </div>
+</nav>
