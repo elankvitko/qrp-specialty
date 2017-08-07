@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/our-specialties', to: 'specialties#index', as: "specialties"
   get '/services', to: 'services#index', as: "services"
   get '/contact-us', to: 'contact#index', as: "contact"
+  get '/enrollment-forms', to: 'enrollment#index', as: "enrollment"
 end
