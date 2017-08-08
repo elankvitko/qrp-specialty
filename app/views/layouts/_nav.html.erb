@@ -23,22 +23,22 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <ul class="multi-column-dropdown">
-                                    <li><a href="#">ADDICTION MANAGEMENT</a></li>
-                                    <li><a href="#">DERMATOLOGY</a></li>
-                                    <li><a href="#">CARDIOVASCULAR DISEASE</a></li>
-                                    <li><a href="#">FERTILITY</a></li>
-                                    <li><a href="#">ONCOLOGY</a></li>
-                                    <li><a href="#">HAPETITIS</a></li>
+                                    <li><%= link_to "HIV", {:controller => "specialties", :action => "index", :article => "hiv" }%></li>
+                                    <li><%= link_to "ONCOLOGY", {:controller => "specialties", :action => "index", :article => "oncology" }%></li>
+                                    <li><%= link_to "HUNTINGTON'S DISEASE", {:controller => "specialties", :action => "index", :article => "hd" }%></li>
+                                    <li><%= link_to "MULTIPLE SCLEROSIS", {:controller => "specialties", :action => "index", :article => "ms" }%></li>
+                                    <li><%= link_to "HEPATITIS C", {:controller => "specialties", :action => "index", :article => "hepc" }%></li>
+                                    <li><%= link_to "HEPATITIS B", {:controller => "specialties", :action => "index", :article => "hepb" }%></li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="multi-column-dropdown">
-                                    <li><a href="#">ADDICTION MANAGEMENT</a></li>
-                                    <li><a href="#">DERMATOLOGY</a></li>
-                                    <li><a href="#">CARDIOVASCULAR DISEASE</a></li>
-                                    <li><a href="#">FERTILITY</a></li>
-                                    <li><a href="#">ONCOLOGY</a></li>
-                                    <li><a href="#">HAPETITIS</a></li>
+                                    <li><%= link_to "CHELATION THERAPY", {:controller => "specialties", :action => "index", :article => "chelation" }%></li>
+                                    <li><%= link_to "ADDICTION MANAGEMENT", {:controller => "specialties", :action => "index", :article => "addiction" }%></li>
+                                    <li><%= link_to "IMMUNODEFICINECY", {:controller => "specialties", :action => "index", :article => "immuno" }%></li>
+                                    <li><%= link_to "GASTROENTEROLOGY", {:controller => "specialties", :action => "index", :article => "gastro" }%></li>
+                                    <li><%= link_to "RHEUMATOID ARTHRITIS", {:controller => "specialties", :action => "index", :article => "ra" }%></li>
+                                    <li><%= link_to "DEEP VEIN THROMBOSIS", {:controller => "specialties", :action => "index", :article => "dvt" }%></li>
                                 </ul>
                             </div>
                         </div>

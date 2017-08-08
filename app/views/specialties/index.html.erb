@@ -26,7 +26,11 @@
 </div>
 <div class="section ">
     <div class="container-fluid mt-30 pb-30" id="profile">
-      <%= render "hepc" %>
+      <% if @article %>
+        <%= render @article %>
+      <% else %>
+        <%= render "hepc" %>
+      <% end %>
     </div>
 </div>
 
