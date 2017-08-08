@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root :to => 'home#index'
 
   get '/our-specialties', to: 'specialties#index', as: "specialties"
+  get '/our-specialties/article', to: 'specialties#get_article', as: "get_specialty"
   get '/services', to: 'services#index', as: "services"
   get '/contact-us', to: 'contact#index', as: "contact"
   get '/enrollment-forms', to: 'enrollment#index', as: "enrollment"
