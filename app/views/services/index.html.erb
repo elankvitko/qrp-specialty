@@ -26,7 +26,7 @@
             <div class="row text-center benefits mt-20">
                 <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                     <a href="" class="icon-link">
-                        <div class="custom-icons">
+                        <div class="custom-icons" id="education">
                             <%= image_tag "/images/edu_icon.png", class: "icon" %>
                         </div>
                         <h2>EDUCATION</h2>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                     <a href="" class="icon-link">
-                        <div class="custom-icons">
+                        <div class="custom-icons" id="finanace">
                             <%= image_tag "/images/finance_icon.png", class: "icon" %>
                         </div>
                         <h2>FINANCIAL ASSISTANCE</h2>
@@ -42,32 +42,32 @@
                 </div>
                 <div class="col-sm-3 col-xs-6 col-md-2 text-center">
                     <a href="" class="icon-link">
-                        <div class="custom-icons first-child">
-                            <%= image_tag "distribution.png", class: "icon first-icon" %>
+                        <div class="custom-icons" id="speciality">
+                            <%= image_tag "/images/distribution.png", class: "icon first-icon" %>
                         </div>
                         <h2>LIMITED DISTRIBUTION MEDICATIONS</h2>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                     <a href="" class="icon-link">
-                        <div class="custom-icons">
-                            <%= image_tag "portal.png", class: "icon" %>
+                        <div class="custom-icons" id="auth">
+                            <%= image_tag "/images/portal.png", class: "icon" %>
                         </div>
                         <h2>PORTAL TECHNOLOGY</h2>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                     <a href="" class="icon-link">
-                        <div class="custom-icons">
-                            <%= image_tag "privacy.png", class: "icon" %>
+                        <div class="custom-icons" id="privacy">
+                            <%= image_tag "/images/privacy.png", class: "icon" %>
                         </div>
                         <h2>PRIVACY</h2>
                     </a>
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                     <a href="" class="icon-link">
-                        <div class="custom-icons">
-                            <%= image_tag "q_a.png", class: "icon" %>
+                        <div class="custom-icons" id="quality">
+                            <%= image_tag "/images/q_a.png", class: "icon" %>
                         </div>
                         <h2>QUALITY ASSURANCE</h2>
                     </a>
@@ -115,3 +115,5 @@
 
 <%= render "layouts/partner_logos" %>
 <%= render "layouts/footer" %>
+
+<%= javascript_include_tag 'quickrx.js' %>

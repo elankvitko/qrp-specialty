@@ -22,15 +22,15 @@
             <h1>OUR BENEFITS</h1>
             <div class="col-md-offset-2 col-sm-3 col-xs-6 col-md-2 text-center">
                 <a href="" class="icon-link">
-                    <div class="custom-icons first-child">
-                        <%= image_tag "/images/specialty_icon.png", class: "icon first-icon", alt: "Specialty" %>
+                    <div class="custom-icons first-child" id="specialty">
+                        <%= image_tag "/images/specialty_icon.png", class: "icon", alt: "Specialty" %>
                     </div>
                     <h2>SPECIALTIES</h2>
                 </a>
             </div>
             <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                 <a href="" class="icon-link">
-                    <div class="custom-icons">
+                    <div class="custom-icons" id="auth">
                         <%= image_tag "/images/priorA_icon.png", class: "icon", alt: "Prior Authorization" %>
                     </div>
                     <h2>PRIOR AUTHORIZATION</h2>
@@ -38,7 +38,7 @@
             </div>
             <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                 <a href="" class="icon-link">
-                    <div class="custom-icons">
+                    <div class="custom-icons" id="finance">
                         <%= image_tag "/images/finance_icon.png", class: "icon", alt: "Finance" %>
                     </div>
                     <h2>FINANCIAL ASSISTANCE</h2>
@@ -46,7 +46,7 @@
             </div>
             <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                 <a href="" class="icon-link">
-                    <div class="custom-icons">
+                    <div class="custom-icons" id="education">
                         <%= image_tag "/images/edu_icon.png", class: "icon", alt: "Education" %>
                     </div>
                     <h2>EDUCATION</h2>
@@ -216,23 +216,4 @@
 	});
 </script>
 
-<script type="text/javascript">
-	$(function() {
-		$(".custom-icons")
-			.mouseover(function() {
-				var changeThis = $(this).children()[ 0 ]
-				var nameWithoutPng = $(changeThis).attr( "src" ).split( "/" )[ 2 ]
-				var name = nameWithoutPng.split( ".png" )[ 0 ];
-				var src = "/images/" + name + "-red.png"
-		 		$(changeThis).attr("src", src);
-			})
-
-			.mouseout(function() {
-				var changeThis = $(this).children()[ 0 ]
-				var nameWithoutPng = $(changeThis).attr( "src" ).split( "/" )[ 2 ]
-				var name = nameWithoutPng.split( "-red.png" )[ 0 ];
-				var src = "/images/" + name + ".png"
-		 		$(changeThis).attr("src", src);
-			});
-	});
-</script>
+<%= javascript_include_tag 'quickrx.js' %>
