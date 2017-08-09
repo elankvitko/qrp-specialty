@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/services', to: 'services#index', as: "services"
   get '/contact-us', to: 'contact#index', as: "contact"
   get '/enrollment-forms', to: 'enrollment#index', as: "enrollment"
+  post '/contact/send_mail', to: 'contact#send_mail', as: "message"
 end

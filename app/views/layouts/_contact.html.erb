@@ -1,0 +1,24 @@
+<%= form_tag '/contact/send_mail', method: 'post', id: 'contact_form' do %>
+    <div class="form-group">
+        <%= text_field_tag :first_name, params[ :first_name ], id: "firstname", placeholder: "First Name", class: "form-control" %>
+    </div>
+    <div class="form-group">
+        <%= text_field_tag :last_name, params[ :last_name ], id: "lastname", placeholder: "Last Name", class: "form-control" %>
+    </div>
+    <div class="form-group">
+        <%= text_field_tag :city, params[ :city ], id: "city", placeholder: "City", class: "form-control" %>
+    </div>
+    <div class="form-group">
+        <%= text_field_tag :state, params[ :state ], id: "state", placeholder: "State", class: "form-control" %>
+    </div>
+    <div class="form-group">
+        <%= text_field_tag :phone, params[ :phone ], id: "phone", placeholder: "Phone", class: "form-control" %>
+    </div>
+    <div class="form-group">
+        <%= email_field_tag :email, params[ :email ], id: "email", placeholder: "Email", class: "form-control" %>
+    </div>
+    <div class="form-group">
+        <%= text_area_tag :message, params[ :message ], id: "message", placeholder: "Message", class: "form-control", id: "form-text", rows: "4" %>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+<% end %>

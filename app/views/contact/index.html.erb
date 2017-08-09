@@ -24,52 +24,18 @@
                 <h1 class="contact_h1 pdt-5">CONTACT US</h1>
 
                 <div class="col-md-6">
-                    <p class="form_subhead">For more information please fill out your details and we will contact you shortly</p>
-                    <form id="contact_form">
-                        <div class="form-group">
-                            <label for="firstname" class="sr-only">First Name</label>
-                            <input type="text" class="form-control" id="firstname" placeholder="First Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="surname" class="sr-only">First Name</label>
-                            <input type="text" class="form-control" id="surname" placeholder="Surname">
-                        </div>
-                        <div class="form-group">
-                            <label for="addresss" class="sr-only">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="Address">
-                        </div>
-                        <div class="form-group">
-                            <label for="city" class="sr-only">City</label>
-                            <input type="text" class="form-control" id="city" placeholder="City">
-                        </div>
-                        <div class="form-group">
-                            <label for="state" class="sr-only">State</label>
-                            <input type="text" class="form-control" id="state" placeholder="State">
-                        </div>
-                        <div class="form-group">
-                            <label for="zipcode" class="sr-only">Zip Code</label>
-                            <input type="text" class="form-control" id="zipcode" placeholder="Zip COde">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="sr-only">Phone</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="form-text" class="form-control" rows="4" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default">SEND</button>
-                    </form>
+                    <% if @contact_success %>
+                      <p class="form_subhead">Thank you for submitting the form. Someone will contact you shortly!</p>
+                    <% else %>
+                      <p class="form_subhead">For more information please fill out your details and we will contact you shortly</p>
+                      <%= render "layouts/contact" %>
+                    <% end %>
                 </div>
                 <div class="col-md-6">
-                    <h5 class="address_heading">QuickRX Headquater</h5>
-                    <p>90 Broad street, Suite 402</p>
-                    <p>New York, NY 10004</p>
-                    <p>Telephone: 212-249-8202</p>
-                    <p>Email: support@qrpgroup.com</p>
+                    <h5 class="address_heading">QuickRX Specialty Pharmacy</h5>
+                    <p>1642 Eastchester Rd.</p>
+                    <p>Bronx, NY 10461</p>
+                    <p>Telephone: 800-496-6111</p>
                     <div class="col-md-12 form-social">
                         <a href="#" class="social-icon-inverse"><i class="fa fa-twitter "></i></a>
                         <a href="#" class="social-icon-inverse"><i class="fa fa-facebook"></i></a>
