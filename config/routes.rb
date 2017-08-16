@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/contact-us', to: 'contact#index', as: "contact"
   get '/enrollment-forms', to: 'enrollment#index', as: "enrollment"
   post '/contact/send_mail', to: 'contact#send_mail', as: "message"
+  get '/about-us', to: 'about#index', as: "about"
 end

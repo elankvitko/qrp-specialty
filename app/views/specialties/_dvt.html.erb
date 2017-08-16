@@ -1,0 +1,32 @@
+<div class="row">
+    <p class="article-no-display">#<%= @article %> .icon</p>
+    <div class="col-lg-4 col-md-3 col-sm-7 ">
+        <div class="profile-box">
+            <%= image_tag "card.png", width: "100%" %>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-7 col-sm-5  pl-50">
+        <h1>DEEP VEIN THROMBOSIS</h1>
+        <br>
+
+        <h4>What is Deep Vein Thrombosis?</h4>
+        <p>Deep vein thrombosis (DVT) is a condition that forms blood clots in deep veins of the body.</p>
+
+        <p><b>Where do DVT's form?</b></p>
+        <p>DVT most commonly occurs in the legs, with 77% of patients experiencing DVT in only one leg and 12% of patients having blood clots in both legs. Very rarely do patients develop blood clots in other areas such as arms, neck, and pelvis. Deep vein thrombosis may cause pain or swelling in the leg but may also appear with minimal to no symptoms. If a blood clot breaks through the vein, it may travel to the lungs and cause a blockage of blood flow thus putting the patient at possible risk of a pulmonary embolism. DVT is usually resulting from limited blood circulation due to certain medications, surgery, and minimal movement.</p>
+
+        <p><b>Treatment:</b></p>
+        <p>DVT is a treatable condition with many different treatments and medication introduced. Some DVT treatments include clot busters (drugs administered through an IV to break up blood clots) and filters (vena cava filters prevent blood clots from traveling to your lungs). Other treatments such as blood thinners are given to patients to prevent blood clots initially. Drugs such as Warfarin (blood thinner) may cause patients to bleed excessively, and symptoms may include joint pain, severe headaches or stomach aches, and dizziness or weakness.
+          <br>
+          Specialty DVT medications that are used in DVT treatments include:
+          <ul>
+            <li>Arixtra®</li>
+            <li>Fragmin®</li>
+            <li>Lovenox®</li>
+          </ul>
+        </p>
+
+        <p><b>For all inquires about deep vein thrombosis, DVT treatments, and various other medical conditions <%= link_to "contact", contact_path %> Quick RX’s expert team!</b></p>
+        <%= link_to "Download A Referral Form", enrollment_path, class: "btn btn-default btnsubmit enrollment-trick" %>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="section">
+    <div class="container-fluid small-gaps" id="icon-banner">
+        <div class="row text-center benefits">
+            <h1>OUR BENEFITS</h1>
+            <div class="col-md-offset-2 col-sm-3 col-xs-6 col-md-2 text-center">
+                <%= link_to specialties_path, class: "icon-link" do %>
+                    <div class="custom-icons first-child" id="specialty">
+                        <%= image_tag "/images/specialty_icon.png", class: "icon", alt: "Specialty" %>
+                    </div>
+                    <h2>SPECIALTIES</h2>
+                <% end %>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6 text-center">
+                <a href="" class="icon-link">
+                    <div class="custom-icons" id="auth">
+                        <%= image_tag "/images/priorA_icon.png", class: "icon", alt: "Prior Authorization" %>
+                    </div>
+                    <h2>PRIOR AUTHORIZATION</h2>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6 text-center">
+                <a href="" class="icon-link">
+                    <div class="custom-icons" id="finance">
+                        <%= image_tag "/images/finance_icon.png", class: "icon", alt: "Finance" %>
+                    </div>
+                    <h2>FINANCIAL ASSISTANCE</h2>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6 text-center">
+                <a href="" class="icon-link">
+                    <div class="custom-icons" id="education">
+                        <%= image_tag "/images/edu_icon.png", class: "icon", alt: "Education" %>
+                    </div>
+                    <h2>EDUCATION</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
