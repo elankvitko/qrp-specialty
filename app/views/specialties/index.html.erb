@@ -36,3 +36,13 @@
 
 <%= render "layouts/partner_logos" %>
 <%= render "layouts/footer" %>
+
+<script type="text/javascript">
+  $( document ).ready( function() {
+    var id = window.location.href.split( "?article=" )[ 1 ];
+    var address = "#" + id + " .icon";
+    var src = $(address).attr("src").match(/[^\.]+/) + "over.png";
+    $(address).attr("src", src);
+    $( "#" + id ).addClass( "white-impt-bg" )
+  });
+</script>

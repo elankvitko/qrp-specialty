@@ -3,7 +3,7 @@
         <div class="row text-center benefits">
             <h1>OUR BENEFITS</h1>
             <div class="col-md-offset-2 col-sm-3 col-xs-6 col-md-2 text-center">
-                <%= link_to specialties_path, class: "icon-link" do %>
+                <%= link_to( options = { :controller => "specialties", :action => "index", :article => "it" }, html_options = { class: "icon-link" } ) do %>
                     <div class="custom-icons first-child" id="specialty">
                         <%= image_tag "/images/specialty_icon.png", class: "icon", alt: "Specialty" %>
                     </div>

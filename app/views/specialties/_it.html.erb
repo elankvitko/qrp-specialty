@@ -1,0 +1,57 @@
+<div class="row">
+    <p class="article-no-display">#<%= @article %> .icon</p>
+    <div class="col-lg-4 col-md-3 col-sm-7 ">
+        <div class="profile-box">
+            <%= image_tag "card.png", width: "100%" %>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-7 col-sm-5  pl-50">
+        <h1>INFUSION THERAPY</h1>
+        <br>
+
+        <h4>What is Infusion Therapy?</h4>
+        <p>Infusion therapy (IV or Intravenous therapy) is an alternative to receiving medication and nutrients orally. Those who are infected with chronic illnesses are sometimes unable to swallow pills that will assist in remedying their disease. Even if an ill individual were able to swallow the necessary medication their stomach acids could destroy the medication rendering it ineffective. In these cases, infusion therapy is the perfect alternative treatment for receiving medication.</p>
+        <p>Infusion therapy is when fluids are directly entered into veins through the use of a needle or catheter. IV therapy can be used to treat illness, disease, and deficiencies. The treatment is so reliable that it is often used to treat chronic illnesses. Intravenous therapy is used to treat:</p>
+        <br>
+
+        <ul>
+          <li><b>Immune Neutropenia:</b> this illness is characterized by the immune system attacking itself and causing the body’s neutrophils count to drop. Neutrophils are a type of white blood cell that attacks invaders of your bodily system such as bacteria. When your neutrophils count drops you become more susceptible to illness and infection.</li>
+          <li><b>Alpha-1 Antitrypsin Deficiency:</b> also known as AATD, A1AD, and Genetic emphysema is an inherited deficiency. Those who suffer from AATD have low levels of alpha-1 antitrypsin. Alpha-1 antitrypsin is a protein that is found in the blood. Low levels of this protein cause infection and inflammation of the lungs and liver.</li>
+          <li><b>Hemophilia:</b> is a rare bleeding disorder. Those who suffer from hemophilia do not have enough proteins that induce blood clotting. Due to the blood’s inability to clot, hemophiliacs once injured endure prolonged bleeding that can be fatal.</li>
+          <li><b>Hepatitis C:</b> if you would like to learn more about Hep C click <%= link_to "HERE", specialties_path( :article => "hepc" ) %></li>
+        </ul>
+
+        <p><b>Infusion therapy is also used to treat:</b></p>
+          <ul>
+            <li>Cancers</li>
+            <li>Diseases of the intestines</li>
+            <li>Dehydration</li>
+            <li>Viral Infections</li>
+            <li>Chronic pain</li>
+            <li>Vitamin deficiencies</li>
+            <li>Arthritis</li>
+            <li>Crohn’s disease</li>
+            <li>Lupus</li>
+            <li>Headaches</li>
+          </ul>
+
+        <p>
+          IV therapy is so trusted that special practices utilize it to administer vitamins as beauty treatments. Intravenous therapy is a truly versatile therapy that helps in the remedying of many causes of discomfort.
+        </p>
+
+        <p>
+          <b>Some infusion therapies that deal directly with health are:</b>
+          <ul>
+            <li>IV Chemotherapy</li>
+            <li>Intravenous hydration therapy</li>
+            <li>Pain management</li>
+            <li>Intravenous anti-coagulation therapy</li>
+            <li>Intravenous antibiotic therapy</li>
+          </ul>
+        </p>
+
+        <p><b>Talk to your doctor about how Infusion therapy can assist you on your way to a perfect bill of health</b></p>
+
+        <%= link_to "Download A Referral Form", enrollment_path, class: "btn btn-default btnsubmit enrollment-trick" %>
+    </div>
+</div>

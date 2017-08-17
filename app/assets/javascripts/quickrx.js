@@ -6,6 +6,8 @@ $(".custom-icons")
         var address = "#" + this.id + " .icon";
         var src = $(address).attr("src").match(/[^\.]+/) + "over.png";
         $(address).attr("src", src);
+      } else if ( classes.length === 2 && classes[ 1 ] === "white-impt-bg" ) {
+        false
       } else if ( classes.length === 1 ) {
         var address = "#" + this.id + " .icon";
         var src = $(address).attr("src").match(/[^\.]+/) + "over.png";

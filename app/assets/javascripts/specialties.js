@@ -9,6 +9,14 @@ $( ".custom-icons" ).on( "click", function( e ) {
     $( address ).attr( "src", src );
   }
 
+  var checkBool = $( ".white-impt-bg" ).html().includes( "over" );
+
+  if ( checkBool === true ) {
+    var address = "#" + $( ".white-impt-bg" ).attr( "id" ) + " .icon";
+    var src = $(address).attr("src").replace("over.png", ".png");
+    $(address).attr("src", src).fadeIn(700);
+  }
+
   $( "body" ).find( ".active-article" ).removeClass( "active-article" );
   $( "body" ).find( ".white-impt-bg" ).removeClass( "white-impt-bg" );
   $( this ).addClass( "active-article" );
