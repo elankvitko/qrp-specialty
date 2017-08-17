@@ -11,12 +11,12 @@
                 <% end %>
             </div>
             <div class="col-md-2 col-sm-3 col-xs-6 text-center">
-                <a href="" class="icon-link">
+                <%= link_to( options = { :controller => "pa", :action => "index" }, html_options = { class: "icon-link" } ) do %>
                     <div class="custom-icons" id="auth">
                         <%= image_tag "/images/priorA_icon.png", class: "icon", alt: "Prior Authorization" %>
                     </div>
                     <h2>PRIOR AUTHORIZATION</h2>
-                </a>
+                <% end %>
             </div>
             <div class="col-md-2 col-sm-3 col-xs-6 text-center">
                 <a href="" class="icon-link">
