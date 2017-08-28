@@ -498,8 +498,23 @@ header h1 {
 }
 
 .image-holder-ek {
-  width: 100%;
-  float: right;
+  text-align: center;
+}
+
+.image-holder-ek img {
+  width: 800px;
+}
+
+.text-holder-main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.elan-body-txt p {
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .elan-main-head {
