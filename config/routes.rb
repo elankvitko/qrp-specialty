@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get '/enrollment-forms', to: 'enrollment#index', as: "enrollment"
   post '/contact/send_mail', to: 'contact#send_mail', as: "message"
   get '/about-us', to: 'about#index', as: "about"
+  get '/340b', to: 'threeb#index', as: "assured"
   get '/pa', to: 'pa#index', as: "prior_auth"
 end

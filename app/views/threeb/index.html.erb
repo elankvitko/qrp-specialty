@@ -1,0 +1,76 @@
+<%= render "layouts/mini_nav" %>
+
+<%= render "layouts/nav" %>
+
+<div class="header">
+    <div class="container-fluid specialities-header background">
+        <div class="row">
+            <div class="col-md-12">
+                <%= image_tag "q.png", class: "top_Q_header" %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid small-gaps" id="icon-banner">
+      <style media="screen">
+        .three-head {
+          text-align: center;
+        }
+      </style>
+      <h1 class="three-head">340B</h1>
+    </div>
+</div>
+
+<div class="section ">
+    <div class="container-fluid mt-30 pb-30" id="profile">
+      <div class="row">
+          <p class="article-no-display">#<%= @article %> .icon</p>
+          <div class="col-lg-4 col-md-3 col-sm-7 ">
+              <div class="profile-box">
+                  <%= image_tag "card.png", width: "100%" %>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-5  pl-50">
+              <style media="screen">
+                .three-text {
+                  font-size: 14px;
+                  text-align: justify;
+                  line-height: 20px;
+                }
+              </style>
+              <p class="three-text">Quick RX is a proud participant of the 340B Drug Discount Program; a US Federal government initiative that delivers the outpatient medication at an affordable price to Americans who are most financially vulnerable. We believe that no American should go without treatment or have to worry about how to pay for their specialty medication.</p>
+              <br>
+              <p class="three-text">The 340B Drug Discount Program provides underprivileged Americans access to low-cost health care by regulating drug manufacturer prices. Through this mandate, qualifying hospitals and healthcare facilities can provide outpatient drugs at a discounted rate to reduce the financial burden health care can impose on the middle or lower class. Luckily, more than one-third of nationwide hospitals are participants of the 340B Program, saving patients in numerous health centered locations about 25-50% off the wholesale price of specialty medications.</p>
+              <br>
+              <p class="three-text">Specialty medicine differs from over the counter medication because it must be prescribed by a doctor thus raising the premiums of the drug. Typically a co-pay, a payment that remains after the insurer has paid for the drug, exists which can deter low-income patients from purchasing specialty medications they desperately need. Patients faced with chronic diseases such as diabetes are forced to spend upwards of $500 a month, without insurance, just on insulin alone to sustain their condition. The 340B program eliminates any extra costs for financially unstable patients with chronic disease.</p>
+              <br>
+              <p class="three-text">Specialty medications are a critical component for 340B programs. Specialty medications and therapies tend to be very complex and have attached to them a higher price. Due to the market dealing with specialty medications experiencing rapid growth, pharmaceutical companies have begun to raise their prices. This burden falls heavily on those who are uninsured. Uninsured patients would be expected to pay a portion of the list price making the life-saving specialty medications needed to treat serious treatments expensive and inaccessible.The 340B program directly opposes this occurrence.</p>
+              <br>
+              <p class="three-text">QuickRx opened its doors to allow for rigorous auditing all to ensure we would be held to the highest standards. The complex compliance QuickRx was up against included various components such as ongoing efforts to prevent the diversion of specialty drugs to non-qualified patients and non-qualified clinics, operating with a patient-centered strategy, creating policies and procedures that adhere to drug safety protocols, protecting the health information of consumers, demonstrating timeliness when it comes to serving our patients, reporting performance measures to URAC, and much more. QuickRx’s efforts were rewarded by our pharmacies being held to the highest standard when it comes to patient care and education. As a result of our 340B accreditation, QuickRx is able to work alongside qualified 340B hospitals and healthcare organizations, providing uninsured or financially vulnerable patients more affordable medications for diseases like HIV, hepatitis, and other chronic illness.
+              </p>
+              <br>
+              <br>
+              <p class="three-text"><b>QuickRX</b> is a proud partner of the below organizations:</p>
+              <ul>
+                <li><a href="http://www.bsfhc.org/">Bedford-Stuyvesant Family Health Center</a></li>
+                <li><a href="http://www.mountsinai.org/">Mt. Sinai Hospital</a></li>
+                <li><a href="http://www.nyp.org/home">New York Presbyterian</a></li>
+                <li><a href="http://boriken.org/">Boriken Neighborhood Health Center </a></li>
+                <li><a href="http://www.cumc.columbia.edu/harlem-hospital/general-information">Harlem Hospital </a></li>
+                <li><a href="http://www.nychealthandhospitals.org/metropolitan/">Metropolitan Hospital</a></li>
+                <li><a href="http://www.nychealthandhospitals.org/ConeyIsland/">Coney Island Hospital</a></li>
+                <li><a href="https://www.harlemunited.org/">Harlem United</a></li>
+                <li><a href="http://www.ascnyc.org/">The Alliance for Positive Change (ASCNYC)</a></li>
+              </ul>
+              <p class="three-text">
+                If you would like more information, please visit our 340B department's website <a href="http://340bassured.com" target="_blank">Here</a>
+              </p>
+          </div>
+      </div>
+    </div>
+</div>
+
+<%= render "layouts/partner_logos" %>
+<%= render "layouts/footer" %>
