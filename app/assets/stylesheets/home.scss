@@ -14,3 +14,57 @@
 #my-navbar-collapse {
   height: 190px !important;
 }
+
+#my-navbar-collapse ul.nav {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.custom-icons {
+  background: #ffffff !important;
+  width: 160px !important;
+}
+
+#icon-banner {
+  background: #ffffff !important;
+}
+
+.benefits h2 {
+  color: #112550 !important;
+  font-weight: bold !important;
+}
+
+.benefits h1 {
+  color: #112550 !important;
+  font-weight: bold;
+}
+
+.icon {
+  width: 120px !important;
+  height: 90px !important;
+}
+
+.top_nav {
+  margin-top: 15px !important;
+}
+
+.top_nav li a {
+  background: #ffffff !important;
+  color: #112550 !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.section-bar-override {
+  border-bottom: 0px !important;
+}
+
+.style-nav-icons {
+  right: 0 !important;
+  bottom: 0 !important;
+  position: absolute !important;
+  width: 85% !important;
+  margin-bottom: 85px !important;
+  margin-right: -390px !important;
+}

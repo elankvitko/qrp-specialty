@@ -141,7 +141,9 @@ a[class*=social-icon-] {
 }
 
 .logo_img {
-    height: 75px
+    height: 100px;
+    bottom: 0;
+    position: absolute;
 }
 
 .top_nav {
