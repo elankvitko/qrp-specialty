@@ -11,36 +11,60 @@
   height: 235px !important;
 }
 
-#my-navbar-collapse {
-  height: 190px !important;
+.margin-left-40 {
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
-#my-navbar-collapse ul.nav {
-  bottom: 0;
-  right: 0;
-  position: absolute;
+ul.top_nav {
+  margin-top: 32px !important;
+  margin-right: 10px !important;
 }
 
-.custom-icons {
+ul.top_nav a {
+  background: #ffffff !important;
+  color: #337ab7 !important;
+}
+
+// #small-nav {
+//   margin-right: 10px;
+// }
+//
+// #small-nav .navbar-nav li a {
+//   padding: 0 !important;
+//   margin: 10px 15px !important;
+// }
+//
+// #my-navbar-collapse {
+//   height: 190px !important;
+// }
+//
+// #my-navbar-collapse ul.nav {
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+// }
+
+.icon-mod .custom-icons {
   background: #ffffff !important;
   width: 160px !important;
 }
 
-#icon-banner {
+.icon-mod #icon-banner {
   background: #ffffff !important;
 }
 
-.benefits h2 {
+.icon-mod .benefits h2 {
   color: #112550 !important;
   font-weight: bold !important;
 }
 
-.benefits h1 {
+.icon-mod .benefits h1 {
   color: #112550 !important;
   font-weight: bold;
 }
 
-.icon {
+.icon-mod .icon {
   width: 120px !important;
   height: 90px !important;
 }
@@ -49,22 +73,20 @@
   margin-top: 15px !important;
 }
 
-.top_nav li a {
-  background: #ffffff !important;
-  color: #112550 !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-}
-
-.section-bar-override {
-  border-bottom: 0px !important;
-}
-
-.style-nav-icons {
-  right: 0 !important;
-  bottom: 0 !important;
-  position: absolute !important;
-  width: 85% !important;
-  margin-bottom: 85px !important;
-  margin-right: -390px !important;
-}
+// .top_nav li a {
+//   background: #ffffff !important;
+//   color: #112550 !important;
+//   font-size: 20px !important;
+//   font-weight: bold !important;
+// }
+//
+// .section-bar-override {
+//   border-bottom: 0px !important;
+// }
+//
+// .style-nav-icons {
+//   top: 0 !important;
+//   left: 0 !important;
+//   position: absolute !important;
+//   width: 85% !important;
+// }

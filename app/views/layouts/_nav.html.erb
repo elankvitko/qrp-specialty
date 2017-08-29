@@ -14,17 +14,30 @@
             </div>
         </div>
         <div class="collapse navbar-collapse" id="my-navbar-collapse">
-          <%= render "layouts/partner_logos_nav" %>
             <ul id="nav" class="nav navbar-nav navbar-right">
                 <li><%= link_to "HOME", root_path, class: active_class( link_to root_url ) %></li>
 
-                <li><%= link_to "ABOUT US", about_path, class: active_class( link_to about_path ) %></li>
+                <li class="dropdown">
+                    <%= link_to "ABOUT US", { :controller => "about", :action => "index", :article => "timeline" }, class: "dropdown-toggle #{ active_class( link_to about_url ) }" %>
+                    <ul class="dropdown-menu multi-column columns-2">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <ul class="multi-column-dropdown">
+                                  <li><%= link_to "HISTORY", { :controller => "about", :action => "index", :article => "timeline" } %></li>
+                                	<li><a href="#">URAC ACCREDITATION</a></li>
+                                	<li><a href="#">OUR EXECUTIVE TEAM</a></li>
+                                  <li><a href="#">LOCATIONS WE SERVICE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
 
                 <li class="dropdown">
                     <%= link_to "OUR SPECIALTIES", { :controller => "specialties", :action => "index", :article => "it" }, class: "dropdown-toggle #{ active_class( link_to specialties_url ) }" %>
                     <ul class="dropdown-menu multi-column columns-2">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="container-fluid">
                                 <ul class="multi-column-dropdown">
                                     <li><%= link_to "INFUSION THERAPY", {:controller => "specialties", :action => "index", :article => "it" }%></li>
                                     <li><%= link_to "HIV", {:controller => "specialties", :action => "index", :article => "hiv" }%></li>
@@ -32,10 +45,6 @@
                                     <li><%= link_to "HEPATITIS C", {:controller => "specialties", :action => "index", :article => "hepc" }%></li>
                                     <li><%= link_to "HEPATITIS B", {:controller => "specialties", :action => "index", :article => "hepb" }%></li>
                                     <li><%= link_to "GASTROENTEROLOGY", {:controller => "specialties", :action => "index", :article => "gastro" }%></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="multi-column-dropdown">
                                     <li><%= link_to "IMMUNODEFICIENCY", {:controller => "specialties", :action => "index", :article => "immuno" }%></li>
                                     <li><%= link_to "RHEUMATOID ARTHRITIS", {:controller => "specialties", :action => "index", :article => "ra" }%></li>
                                     <li><%= link_to "HUNTINGTONS DISEASE", {:controller => "specialties", :action => "index", :article => "hd" }%></li>
@@ -58,7 +67,7 @@
                     </ul>
                 </li>
 
-                <li><%= link_to "340B", assured_path, class: active_class( link_to assured_path ) %></li>
+                <li><a href="http://340bassured.com" target="_blank">340B</a></li>
 
                 <li><%= link_to "CONTACT US", contact_path, class: active_class( link_to contact_url ) %></li>
             </ul>

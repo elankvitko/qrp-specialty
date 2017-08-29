@@ -142,8 +142,6 @@ a[class*=social-icon-] {
 
 .logo_img {
     height: 100px;
-    bottom: 0;
-    position: absolute;
 }
 
 .top_nav {
@@ -400,11 +398,13 @@ a[class*=social-icon-] {
 .logo-item {
     float: none!important;
     display: inline-block;
-    margin: 0 5px
+    margin: 0 5px;
+    width: 15%;
+    margin-bottom: 30px;
 }
 
 .logo-item img {
-    height: 60px;
+    height: 70px;
     width: auto
 }
 
@@ -724,7 +724,7 @@ a[class*=social-icon-] {
 }
 
 .dropdown-menu.columns-2 {
-    min-width: 500px;
+    min-width: 240px;
     background: #ba0f3b;
     color: #fff;
     right: auto!important;
